@@ -32,7 +32,7 @@ user_agent_list = [
 rp2.country('UK')
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
-wlan.connect("nope", "nill")
+wlan.connect("SSID", "ItsSecret")
 print(wlan.ifconfig())
 
 def doTheThing():
@@ -47,15 +47,17 @@ def doTheThing():
     price = data['last']
 
     print (price)
-    output = ("  B$ " + price)
+    output = ("  B$" + price)
 
-    with open('wolf.pbm', 'rb') as f:
-        f.readline() # Magic number
-        f.readline() # Creator comment
-        f.readline() # Dimensions
+    wolf = ("wolf" + str(random.randint(1,6)) +".pbm")  # Ew, it's gross, don't look at this
+    with open(wolf, 'rb') as f:
+        f.readline()
+        f.readline()
+        f.readline()
         data = bytearray(f.read())
     fbuf = framebuf.FrameBuffer(data, 128, 64, framebuf.MONO_HLSB)
 
+    # Ta da!
     oled.invert(1)
     oled.blit(fbuf, 0, 0)
     oled.text(output, 6, 55)
