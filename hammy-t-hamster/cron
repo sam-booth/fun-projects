@@ -1,0 +1,6 @@
+# In /etc/cron.d/hamster
+05 08 * * 1-5 pi /usr/sbin/hammy startOfDay
+59 15 * * 1-5 pi /usr/sbin/hammy teaBreak
+29 09 * * 1-5 pi /usr/sbin/hammy morningMeeting
+0  12 * * 1-5 pi /usr/sbin/hammy lunch
+29 16 * * 1-5 pi /usr/sbin/hammy endOfDay
