@@ -12,7 +12,7 @@ For camouflage I have borrowed a toy squirrel from my dog, he won't notice.
 
 The rc car has no charger so I'm starting with prototyping jump leads to a usb plug i had laying around, not permanent but working for now.
 
-![A squirrel duct taped to a car](images/test-fit.png)
+![A squirrel duct taped to a car](images/test-fit.jpg)
 
 ## 08/11/2026 11:08 AM - Test 01
 
@@ -22,7 +22,7 @@ While the squirrels did run away, and Agent Acorn ran out of battery and got stu
 
 Next steps are to work on the charging system, setup the pi zero, further strip down the car, increase antenna range, and investigate replacing the motors with more powerful ones I have in inventory. 
 
-![A very realistic squirrel in the grass](images/field-test-01.png)
+![A very realistic squirrel in the grass](images/field-test-01.jpg)
 
 ## 08/11/2026 - 14:32 Post nap clarity
 
